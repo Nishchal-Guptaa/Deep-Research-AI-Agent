@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from typing import TypedDict, List, Dict, Any
 import streamlit as st
 
-path_env = r"C:\Users\nishc\Desktop\Projects\Python\api__admin\.env"
+path_env = r"\api__admin\.env"
 load_dotenv(path_env)
 
 st.title("Research and Synthesis Agent")
