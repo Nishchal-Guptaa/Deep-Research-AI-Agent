@@ -10,7 +10,7 @@ st.title("Research and Synthesis Agent")
 st.write("This agent performs research and synthesizes information based on user queries.")
 # Set up search tool with Tavily API key
 
-tavily_api_key = st.secrets["general"]["tavily_api_key"]
+tavily_api_key = st.secrets["tavily_api_key"]
 
 search_tool = TavilySearchResults(max_results=5, tavily_api_key=tavily_api_key)
 # Function to search with retry mechanism
