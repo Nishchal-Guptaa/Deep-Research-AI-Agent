@@ -21,7 +21,7 @@ This is a Streamlit-based application that integrates with the Tavily API to per
 1. Clone the repository:
    ```bash
    git clone https://github.com/Nishchal-Guptaa/Deep-Research-AI-Agent.git
-   cd research-synthesis-agent
+   cd Deep-Research-AI-Agent
    ```
 
 2. Install the required Python packages:
