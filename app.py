@@ -15,7 +15,7 @@ st.write("This agent performs research and synthesizes information based on user
 
 tavily_api_key = os.getenv("api_key_tavily")
 
-search_tool = TavilySearchResults(max_results=5, tavily_api_key=tavily_api_key)
+search_tool = TavilySearchResults(max_results=5, tavily_api_key=st.secrets["api_key_tavily"])
 # Function to search with retry mechanism
 
 def search_with_retry(query, max_retries=3):
