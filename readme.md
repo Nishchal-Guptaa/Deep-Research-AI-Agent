@@ -1,4 +1,4 @@
-# Research and Synthesis Agent
+# Deep Research AI agent
 
 This is a Streamlit-based application that integrates with the Tavily API to perform research and synthesize information based on user queries. The application has two main phases: **Research** and **Synthesis**, helping users gather and process information effectively.
 
