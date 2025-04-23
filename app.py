@@ -3,19 +3,16 @@ from langchain_community.tools import TavilySearchResults
 import os
 import time
 import random
-from dotenv import load_dotenv
 from typing import TypedDict, List, Dict, Any
 import streamlit as st
-
-load_dotenv()
 
 st.title("Research and Synthesis Agent")
 st.write("This agent performs research and synthesizes information based on user queries.")
 # Set up search tool with Tavily API key
 
-tavily_api_key = os.getenv("api_key_tavily")
+tavily_api_key = st.secrets["tavily_api_key"]
 
-search_tool = TavilySearchResults(max_results=5, tavily_api_key=st.secrets["api_key_tavily"])
+search_tool = TavilySearchResults(max_results=5, tavily_api_key=tavily_api_key)
 # Function to search with retry mechanism
 
 def search_with_retry(query, max_retries=3):
