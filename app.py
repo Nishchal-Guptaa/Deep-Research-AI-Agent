@@ -5,12 +5,13 @@ import time
 import random
 from typing import TypedDict, List, Dict, Any
 import streamlit as st
+from dotenv import load_dotenv
 
 st.title("Research and Synthesis Agent")
 st.write("This agent performs research and synthesizes information based on user queries.")
 # Set up search tool with Tavily API key
 
-tavily_api_key = st.secrets["tavily_api_key"]
+tavily_api_key = os.getenv("api_key_tavily")
 
 search_tool = TavilySearchResults(max_results=5, tavily_api_key=tavily_api_key)
 # Function to search with retry mechanism
