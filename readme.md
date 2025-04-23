@@ -20,7 +20,7 @@ This is a Streamlit-based application that integrates with the Tavily API to per
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/research-synthesis-agent.git
+   git clone https://github.com/Nishchal-Guptaa/Deep-Research-AI-Agent.git
    cd research-synthesis-agent
    ```
 
@@ -95,7 +95,7 @@ This is a Streamlit-based application that integrates with the Tavily API to per
 
 Install these dependencies using:
 ```bash
-pip install langchain-core langchain-community streamlit python-dotenv
+pip install langchain-core langchain-community streamlit python-dotenv langchain
 ```
 
 ## File Structure
@@ -112,9 +112,6 @@ pip install langchain-core langchain-community streamlit python-dotenv
 - Ensure the `.env` file is correctly configured with your Tavily API key.
 - The retry mechanism handles Tavily API rate limits, but excessive usage may still result in errors.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Contributing
 
